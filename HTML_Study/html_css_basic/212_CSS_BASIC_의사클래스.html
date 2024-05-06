@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>의사클래스</title>
+        <style>
+            .menu {
+                padding: 10px;
+                border-bottom: 1px solid black;
+            }
+            li > a {
+                display: inline-block;
+                width: 80px;
+                padding: 10px;
+                text-decoration: none;
+            }
+            a:hover {
+                color: pink;
+                background-color: 7f00ff;
+            }
+            a:active {
+                color: white;
+                background: black;
+            }
+            li:nth-child(3) {
+                font-size: 20px;
+            }
+            /*형제는 'li'태그에 있음. 형제 중 3번째*/
+            /*의사 클래스*/
+            a::first-letter {
+                color: red;
+            }
+            a::after {
+                content: '보기';
+                color: violet;
+            }
+            /*after: 콘텐츠 뒤에 콘텐츠 추가 및 스타일링*/
+            a::before {
+                content: '나랑~';
+                color: silver;
+            }
+            /*before: 콘텐츠 앞에 콘텐츠 추가 및 스타일*/
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="#">사전</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">증권</a></li>
+            <li><a href="#">지도</a></li>
+            <!--  "#" : 실제로는 어디로도 이동하지 않는 더미 링크 -->
+        </ul>
+    </body>
+</html>

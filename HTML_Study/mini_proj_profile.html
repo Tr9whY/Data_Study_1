@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>profile</title>
+    </head>
+    <body>
+        <h1 title="박태영의 프로필 페이지">My Profile</h1>
+        <img
+            src="img\1.PNG"
+            alt="내 사진"
+            width="380"
+            height="600"
+        />
+        <div id="introduction">
+            <p>안녕하세요.<label>저는 <input type="text" placeholder="***" /> </label>입니다.</p>
+            <p><label>저는 <input type="text" placeholder="주소를 입력해주세요." /> </label>에서 살고 있습니다.</p>
+            <p>
+                <q>데이터분석 & 서비스개발 수업</q>을 듣고 있습니다.<br />
+                강사님도 재미있고 다들 열심히 하셔서 분위기가 좋아요. <br />
+                저의 꿈은 <mark><strong><font color="red">좋은 사람, 유능한 데이터 분석가</font></strong></mark> 입니다.
+            </p>
+        </div>
+        <hr />
+        <div id="fun_facts">
+            <h3>Information</h3>
+            <p>
+                1. <s>건축학과(5년제)를 졸업하고 설계(주상복합,오피스텔,지식산업센터,데이터센터)를 3년 했었습니다.
+                </s><br />
+                2. The Bartlett UCL에서 Design AWARD를 받은 경험이 있습니다. <br />
+                3. 취미는   <select>
+                            <option value selected ="coding">코딩</option>
+                            <option value="steamgame">스팀게임</option>
+                            <option value="futsal">풋살</option>
+                            <option value="snowboard">스노우보드</option>
+                            <option value="music">음악감상</option>
+                            <!-- selected 최우선 노출되는 값 -->
+                            </select> 입니다.
+                <br />
+                4.  데이터분석 & 서비스개발 수업에서
+                    <select>
+                    <option value selected ="Python">Python</option>
+                    <option value="MySQL">MySQL</option>
+                    <option value="Html">Html</option>
+                    <!-- selected 최우선 노출되는 값 -->
+                    </select>
+                    을 배웠습니다.<br />
+            </p>
+            <fieldset>
+            <table border="2">
+                <cation>
+                    <h3><strong>💡 Skill 💡</strong></h3><br /><br />
+                        <li>Python &nbsp;&nbsp;<progress max="100" value="50"></progress></li>
+                        <li>MySQL  &nbsp;&nbsp;<progress max="100" value="50"></progress></li>
+                        <li>HTML   &nbsp;&nbsp;&nbsp;&nbsp;<progress max="100" value="30"></progress></li>
+                        <li>Power BI&nbsp;&nbsp;<progress max="100" value="20"></progress></li>
+                        <br />
+                </cation>
+                <thead>
+                    <tr>
+                        <th>&nbsp;Name</th>
+                        <th>Until Now</th>
+                        <th>Future</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <th>박태영</th>
+                            <th>
+                                <select>
+                                <option value selected ="Python">Python</option>
+                                <option value="MySQL">MySQL</option>
+                                <option value="Html">Html</option>
+                                <!-- selected 최우선 노출되는 값 -->
+                                <option value="Power BI">Power BI</option>
+                                </select>
+                            </th>
+                            <th><select>
+                                <option value selected ="Machine Learning">Machine Learning</option>
+                                <option value="Web crawling">Web crawling</option>
+                                <option value="Pandas">Pandas</option>
+                                </select></th>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+            <br />
+        </fieldset>
+            <hr />
+            <p>Email 주소 : ptj0313@naver.com</p> 
+            <h3>Github 주소 </h3>
+            <a href="https://github.com/Tr9whY" target="_blank"><button>Github</button></a>
+        </div>
+        <h2>궁금하신 내용이 있으시면 자유롭게 써주세요.</h2>
+            <textarea cols="50" row="10"></textarea>
+            <!-- cols 열 가로방향, rows 행 세로방향-->
+        <hr />
+        <span> &copy; 박태영</span>
+    </body>
+</html>

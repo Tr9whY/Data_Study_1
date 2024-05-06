@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>컨테이너, 전역속성, 이미지</title>
+    </head>
+    <body>
+        <!--
+        <p>행복하고 즐거워요</p>
+        <p>앉아서 하루종일 컴퓨터만 보니 배가 계속 나와요.</p>
+        <p>
+            그런데 어쩌죠? <br />
+            걱정은 하면서도 지금도 <q>골 때리는 그녀들</q> 재미있게 보고 있어요.
+            <br />
+            물론 제 손에는 츄러스가 들려 있어요.</p>
+        -->
+
+        <div id="study">
+            <p class="text">행복하고 즐거워요.</p>
+            <p class="text">여러분과 html 공부하니깐요.</p>
+        </div>
+
+        <div id="diet">
+            <p>근데 걱정거리가 생겼어요.</p>
+            <p>앉아서 하루종일 컴퓨터만 보니 배가 계속 나와요.</p>
+            <p>어제 거금을 들여 다이어트 하려고 필라테스 20회 끊었어요.</p>
+        </div>
+
+        <p>
+            그런데 어쩌죠? 걱정은 하면서도 지금도
+            <span title="축구예능프로그램"><q>골 때리는 그녀들</q></span>
+            재미있게 보고 있어요. <br />
+            물론 제 손에는 츄러스가 들려 있어요.
+        </p>
+        <!-- 이미지 삽입 -->
+
+        <!-- <img
+            src="C:\Users\taeyoung\Desktop\멀티캠퍼스\2. 수업\4주차\crawling\puppy_01.jpg"
+            alt="chatgpt로 생성한 귀여운 강아지 사진"
+        /> -->
+        <img
+            src="C:\Users\taeyoung\Desktop\멀티캠퍼스\2. 수업\4주차\crawling\img\puppy_01.jpg"
+            alt="절대경로_귀여운 강아지 사진"
+            width="300"
+            height="300"
+        />
+        <br />
+        <img
+            src="data:image/jpeg;base64,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"
+            alt="인터넷경로_귀여운 강아지 사진"
+            width="420"
+            height="297"
+        />
+        <br />
+        <img src="../img/puppy_01.jpg" alt="상대경로_chatgpt로 생성한 귀여운 강아지 사진" width="420" height="297" />
+    </body>
+</html>
